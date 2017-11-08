@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+    <script type="text/javascript">
+
+        function sum(a, b) {
+            return a + b;
+        }
+
+        function product(a, b) {
+            return a * b;
+        }
+
+        function difference(a, b) {
+            return a - b;
+        }
+
+        function quotient(a, b) {
+            return a / b;
+        }
+
+        function power(a, b) {
+            return Math.pow(a, b);
+        }
+
+        function remainder(a, b) {
+            return a % b;
+        }
+
+        var x = 10;
+        var y = 4;
+
+        console.log('The sum of', x, 'and', y, 'is', sum(x, y));
+        console.log('The product of', x,'and', y, 'is', product(x, y ));
+        console.log('The difference of', x, 'and', y, 'is', difference(x, y));
+        console.log('The quotient of', x, 'divided by', y, 'is', quotient(x, y));
+        console.log('The value of', x, 'to the power of', y, 'is', power(x, y));
+        console.log('The remainder of', x, 'divided by', y, 'is',remainder(x, y));
+    </script>
+</body>
+</html>
