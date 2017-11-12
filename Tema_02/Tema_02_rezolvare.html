@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+    <script type="text/javascript">
+
+    function showMessage(message) {
+        document.getElementById('container').innerHTML = document.getElementById('container').innerHTML + '<br>' + message;
+     }
+
+    var str = "Lorem Ipsum is simply dummy text of the printing";
+    showMessage(str.length);
+
+    var withoutSpace = str.replace(/ /g,"");
+    showMessage(withoutSpace.length);
+
+    var posFirstSpace = str.indexOf(" ");
+    var firstWord = str.substring(0, posFirstSpace);
+    showMessage(firstWord.toUpperCase());
+
+    var wordReplace = str.replace("Lorem", "word");
+    showMessage(wordReplace);
+
+    var lastWord = str.substring(posFirstSpace);
+    showMessage(lastWord);
+
+    var posSecondSpace = str.indexOf(" ", posFirstSpace + 1 );
+    var secondWord = str.substring(posFirstSpace, posSecondSpace);
+    showMessage(secondWord);
+    </script>
+</body>
+</html>
