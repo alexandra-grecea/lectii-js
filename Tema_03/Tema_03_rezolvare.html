@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+    <script type="text/javascript">
+
+    function showMessage(message) {
+        document.getElementById('container').innerHTML = document.getElementById('container').innerHTML + '<br>' + message;
+    }
+    //Problema 1
+    var str = "Contrary to popular belief, Lorem Ipsum is not simply random text";
+    var textLength = str.length;
+    var nrOfVowels = 0;
+    var nrOfConsonants = 0;
+    for (var i = 0; i < textLength; i++)
+    {
+        if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u')
+        {
+            nrOfVowels++;
+        }
+        else if (str[i] != ' ')
+        {
+            nrOfConsonants++;
+        }
+    }
+    showMessage('Numarul vocalelor este ' + nrOfVowels + ' iar ' + 'numarul consoanelor este ' + nrOfConsonants + ".");
+
+    //Problema 2
+
+    </script>
+</body>
+</html>
