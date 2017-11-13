@@ -11,24 +11,24 @@
     function showMessage(message) {
         document.getElementById('container').innerHTML = document.getElementById('container').innerHTML + '<br>' + message;
      }
-
-    var str = "Lorem Ipsum is simply dummy text of the printing";
+     //Problema 1
+    var str = 'Lorem Ipsum is simply dummy text of the printing';
     showMessage(str.length);
-
+    //Problema 2
     var withoutSpace = str.replace(/ /g,"");
     showMessage(withoutSpace.length);
-
+    //Problema 3
     var posFirstSpace = str.indexOf(" ");
     var firstWord = str.substring(0, posFirstSpace);
     showMessage(firstWord.toUpperCase());
-
-    var wordReplace = str.replace("Lorem", "word");
+    //Problema 4
+    var wordReplace = str.replace('Lorem', 'word');
     showMessage(wordReplace);
-
+    //Problema 5
     var lastWord = str.substring(posFirstSpace);
     showMessage(lastWord);
-
-    var posSecondSpace = str.indexOf(" ", posFirstSpace + 1 );
+    //Problema 6
+    var posSecondSpace = str.indexOf(' ', posFirstSpace + 1);
     var secondWord = str.substring(posFirstSpace, posSecondSpace);
     showMessage(secondWord);
     </script>
