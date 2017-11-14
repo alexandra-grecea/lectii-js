@@ -30,7 +30,42 @@
     showMessage('Numarul vocalelor este ' + nrOfVowels + ' iar ' + 'numarul consoanelor este ' + nrOfConsonants + ".");
 
     //Problema 2
+    var text = '11001101011011011';
+    var numberOfOnes = 0;
+    var numberOfZeros = 0;
+    for (var i = 0; i < textLength; i++)
+    {
+        if (text[i] == '0')
+        {
+            numberOfOnes++;
+        }
+        else if (text[i] == '1')
+        {
+            numberOfZeros++;
+        }
+    }
+    showMessage('Numarul 0 apare de ' + numberOfOnes + ' ori iar ' + 'numarul 1 apare de ' + numberOfZeros + ' ori' + '.');
 
+    //Problema 3
+    for (var i = 1; i <= 100; i++)
+    {
+        if (i % 3 == 0 && i % 5 == 0)
+        {
+            showMessage('FizzBuzz');
+        }
+        else if (i % 3 == 0)
+        {
+            showMessage('Fizz');
+        }
+        else if (i % 5 == 0)
+        {
+            showMessage('Buzz');
+        }
+        else
+        {
+            showMessage(i);
+        }
+    }
     </script>
 </body>
 </html>
